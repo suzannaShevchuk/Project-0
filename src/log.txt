@@ -1,0 +1,7 @@
+2021-10-06 21:13:41 WARN  Logging:29 - Username created that already exists in the database
+2021-10-06 21:37:05 INFO  Logging:50 - User was logged in
+2021-10-06 21:37:29 WARN  Logging:29 - Username created that already exists in the database
+2021-10-06 21:40:19 WARN  Logging:29 - Username created that already exists in the database
+2021-10-06 21:43:38 WARN  Logging:30 - Username created that already exists in the database
+2021-10-06 21:45:36 INFO  Logging:27 - New user was registered
+2021-10-06 21:45:51 INFO  Logging:51 - User was logged in
