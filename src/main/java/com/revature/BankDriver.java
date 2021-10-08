@@ -2,15 +2,20 @@ package com.revature;
 
 import java.util.Scanner;
 
+import com.example.dao.AccountDao;
+import com.example.dao.AccountDaoDb;
 import com.example.dao.UserDao;
 import com.example.dao.UserDaoDB;
 import com.example.models.User;
+import com.example.services.AccountServices;
 import com.example.services.UserService;
 
 public class BankDriver {
 
 	private static UserDao uDao = new UserDaoDB();
+	private static AccountDao aDao = new AccountDaoDb();
 	private static UserService uServ = new UserService(uDao);
+	private static AccountServices aServ = new AccountServices(aDao);
 	
 	public BankDriver() {
 		// TODO Auto-generated constructor stub
@@ -18,7 +23,9 @@ public class BankDriver {
 
 	public static void main(String[] args) {
 
-		System.out.println(uDao.getAllUsers());
+		//System.out.println(uDao.getAllUsers());
+		
+		//System.out.println(aDao.getAllAcounts());
 
 	Scanner in = new Scanner(System.in);
 		
@@ -41,6 +48,7 @@ public class BankDriver {
 					try {
 						u = uServ.signIn(username, password);
 						System.out.println("Welcome " + u.getUsername());
+						
 					} catch(Exception e) {
 						System.out.println("Username or password was incorrect");
 					}

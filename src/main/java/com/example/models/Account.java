@@ -6,13 +6,23 @@ public class Account  {
 	private double balance;
 	private String username;
 	
-	
+	public Account()
+	{
+		
+	}
 	
 	public Account(int accountId, double balance, String username) {
 		super();
 		this.accountId = accountId;
 		this.balance = balance;
 		this.username = username;
+	}
+	
+	public Account(String username)
+	{
+		super();
+		this.username = username;
+		this.balance = 0.0;
 	}
 	
 	public Account(double balance, String username) {
