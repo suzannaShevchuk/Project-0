@@ -47,42 +47,6 @@ public class AccountServices {
 		return a;
 	}
 	
-	
-	public void withdraw(Account a, double withdraw) throws SQLException
-	{
-		double newBal = (a.getBalance()-withdraw);
-		
-		Account a2 = new Account(a.getAccountId(), newBal, a.getUsername());
-		
-		aDao.updateAccount(a2);
-		Logging.logger.info("Withdrew from account successfully");		
-	}
-	
-	public void deposit(Account a, double deposit) throws SQLException
-	{
-		double newBal = (a.getBalance()+deposit);
-		
-		Account a2 = new Account(a.getAccountId(), newBal, a.getUsername());
-		
-		aDao.updateAccount(a2);
-		Logging.logger.info("Deposited into account successfully");		
-	}
-	
-	public void transfer(Account a, String username, double transfer)
-	{
-		//find other persons account, check if exists. use username
-		//update that account with the new balance
-		//return account? idk
-		
-		Account transferA = aDao.getAccountByUsername(username);
-		double newBal = (transferA.getBalance()+transfer);
-		
-		Account newAccount = Account(transferA.getAccountId(), newBal, transferA.getUsername());
-		
-		aDao.updateAccount(newAccount);
-		
-	}
-	
 	public void delete(Account a)
 	{
 		try {

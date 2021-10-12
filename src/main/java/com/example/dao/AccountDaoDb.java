@@ -103,11 +103,11 @@ public class AccountDaoDb implements AccountDao {
 	
 
 	@Override
-	public void updateAccount(Account a, Account a2) {
+	public void updateAccount(Account a) {
 		
 		try {
 			Connection con = conUtil.getConnection();
-			String sql = "UPDATE accounts SET balance = ?, username = ?";
+			String sql = "UPDATE accounts SET balance = ?, username = ? WHERE accounts.username = '" + a.getUsername() + "'";
 			
 			PreparedStatement ps = con.prepareStatement(sql);
 			

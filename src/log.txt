@@ -11,3 +11,13 @@
 2021-10-07 13:58:09 INFO  Logging:51 - User was logged in
 2021-10-07 13:58:09 INFO  Logging:22 - Account attatched to user was found
 2021-10-07 13:58:09 WARN  Logging:24 - User tried opening account that doesnt exist
+2021-10-11 10:07:31 INFO  Logging:51 - User was logged in
+2021-10-11 15:54:18 INFO  Logging:27 - New user was registered
+2021-10-11 15:55:04 WARN  Logging:30 - Username created that already exists in the database
+2021-10-11 16:19:58 INFO  Logging:51 - User was logged in
+2021-10-11 16:20:13 WARN  Logging:43 - User tried logging in that does not exist
+2021-10-11 16:22:26 INFO  Logging:27 - New user was registered
+2021-10-11 16:27:38 INFO  Logging:27 - New user was registered
+2021-10-11 16:33:46 INFO  Logging:27 - New user was registered
+2021-10-11 22:14:41 INFO  Logging:27 - New user was registered
+2021-10-11 22:14:53 INFO  Logging:51 - User was logged in
