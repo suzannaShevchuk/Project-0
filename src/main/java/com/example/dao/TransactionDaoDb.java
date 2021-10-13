@@ -61,7 +61,7 @@ public class TransactionDaoDb implements TransactionDao{
 			Connection con = conUtil.getConnection();
 			
 			//Create a simple statement
-			String sql = "SELECT * FROM transactions WHERE transactions.account_id = '" + id + "'";
+			String sql = "SELECT * FROM transactions WHERE account_id = '" + id + "'";
 			
 			//We need to create a statement with the sql string
 			Statement s = con.createStatement();

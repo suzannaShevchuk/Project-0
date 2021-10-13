@@ -175,7 +175,8 @@ public class AccountDaoDb implements AccountDao {
 
 		try {
 			Connection con = conUtil.getConnection();
-			String sql = "DELETE FROM accounts WHERE accounts.id = ?";
+			String sql = "DELETE FROM transactions WHERE account_id IN (SELECT id from accounts);"
+					+ "DELETE FROM accounts WHERE accounts.id = ?";
 			PreparedStatement ps = con.prepareStatement(sql);
 			ps.setInt(1, a.getAccountId());
 			ps.execute();

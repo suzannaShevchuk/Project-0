@@ -367,3 +367,172 @@
 2021-10-12 20:27:17 INFO  Logging:51 - User was logged in
 2021-10-12 20:27:17 INFO  Logging:39 - Account attatched to user was found
 2021-10-12 20:27:17 INFO  Logging:39 - Account attatched to user was found
+2021-10-12 20:28:29 INFO  Logging:51 - User was logged in
+2021-10-12 20:28:29 INFO  Logging:39 - Account attatched to user was found
+2021-10-12 20:28:30 INFO  Logging:39 - Account attatched to user was found
+2021-10-12 20:28:35 INFO  Logging:39 - Account attatched to user was found
+2021-10-12 20:28:35 INFO  Logging:39 - Account attatched to user was found
+2021-10-12 20:28:43 INFO  Logging:159 - account status updated
+2021-10-12 20:28:43 INFO  Logging:31 - User successfully deposited
+2021-10-12 20:28:43 INFO  Logging:39 - Account attatched to user was found
+2021-10-12 20:28:44 INFO  Logging:39 - Account attatched to user was found
+2021-10-12 20:28:51 INFO  Logging:159 - account status updated
+2021-10-12 20:28:51 INFO  Logging:37 - User withdrew from account successfully
+2021-10-12 20:28:52 INFO  Logging:39 - Account attatched to user was found
+2021-10-12 20:28:52 INFO  Logging:39 - Account attatched to user was found
+2021-10-12 23:20:31 INFO  Logging:51 - User was logged in
+2021-10-12 23:20:31 INFO  Logging:39 - Account attatched to user was found
+2021-10-12 23:20:31 INFO  Logging:39 - Account attatched to user was found
+2021-10-12 23:20:40 INFO  Logging:39 - Account attatched to user was found
+2021-10-12 23:20:40 INFO  Logging:39 - Account attatched to user was found
+2021-10-12 23:20:52 INFO  Logging:39 - Account attatched to user was found
+2021-10-12 23:20:52 INFO  Logging:39 - Account attatched to user was found
+2021-10-12 23:21:36 INFO  Logging:51 - User was logged in
+2021-10-12 23:21:36 INFO  Logging:39 - Account attatched to user was found
+2021-10-12 23:21:36 INFO  Logging:39 - Account attatched to user was found
+2021-10-12 23:21:43 INFO  Logging:39 - Account attatched to user was found
+2021-10-12 23:21:44 INFO  Logging:39 - Account attatched to user was found
+2021-10-12 23:22:06 INFO  Logging:51 - User was logged in
+2021-10-12 23:25:22 INFO  Logging:51 - User was logged in
+2021-10-12 23:25:22 INFO  Logging:39 - Account attatched to user was found
+2021-10-12 23:25:22 INFO  Logging:39 - Account attatched to user was found
+2021-10-12 23:25:27 INFO  Logging:39 - Account attatched to user was found
+2021-10-12 23:25:27 INFO  Logging:39 - Account attatched to user was found
+2021-10-12 23:26:29 INFO  Logging:51 - User was logged in
+2021-10-12 23:27:51 INFO  Logging:51 - User was logged in
+2021-10-12 23:28:47 INFO  Logging:51 - User was logged in
+2021-10-12 23:28:48 INFO  Logging:39 - Account attatched to user was found
+2021-10-12 23:28:48 INFO  Logging:39 - Account attatched to user was found
+2021-10-12 23:29:36 INFO  Logging:51 - User was logged in
+2021-10-12 23:29:36 INFO  Logging:39 - Account attatched to user was found
+2021-10-12 23:29:36 INFO  Logging:39 - Account attatched to user was found
+2021-10-12 23:29:39 INFO  Logging:39 - Account attatched to user was found
+2021-10-12 23:29:40 INFO  Logging:39 - Account attatched to user was found
+2021-10-12 23:29:50 INFO  Logging:159 - account status updated
+2021-10-12 23:29:50 INFO  Logging:31 - User successfully deposited
+2021-10-12 23:29:50 INFO  Logging:39 - Account attatched to user was found
+2021-10-12 23:29:51 INFO  Logging:39 - Account attatched to user was found
+2021-10-12 23:30:00 INFO  Logging:159 - account status updated
+2021-10-12 23:30:00 INFO  Logging:37 - User withdrew from account successfully
+2021-10-12 23:30:00 INFO  Logging:39 - Account attatched to user was found
+2021-10-12 23:30:01 INFO  Logging:39 - Account attatched to user was found
+2021-10-12 23:30:08 INFO  Logging:39 - Account attatched to user was found
+2021-10-12 23:30:08 INFO  Logging:39 - Account attatched to user was found
+2021-10-12 23:30:20 INFO  Logging:159 - account status updated
+2021-10-12 23:30:21 INFO  Logging:37 - User withdrew from account successfully
+2021-10-12 23:30:31 INFO  Logging:39 - Account attatched to user was found
+2021-10-12 23:30:32 INFO  Logging:159 - account status updated
+2021-10-12 23:30:32 INFO  Logging:31 - User successfully deposited
+2021-10-12 23:30:32 INFO  Logging:39 - Account attatched to user was found
+2021-10-12 23:30:33 INFO  Logging:39 - Account attatched to user was found
+2021-10-12 23:31:01 INFO  Logging:39 - Account attatched to user was found
+2021-10-12 23:31:01 INFO  Logging:39 - Account attatched to user was found
+2021-10-12 23:32:50 INFO  Logging:51 - User was logged in
+2021-10-12 23:32:50 INFO  Logging:39 - Account attatched to user was found
+2021-10-12 23:32:50 INFO  Logging:39 - Account attatched to user was found
+2021-10-12 23:33:10 INFO  Logging:39 - Account attatched to user was found
+2021-10-12 23:33:11 INFO  Logging:39 - Account attatched to user was found
+2021-10-12 23:33:40 WARN  Logging:47 - User tried to login with invalid credentials
+2021-10-12 23:33:50 INFO  Logging:51 - User was logged in
+2021-10-12 23:34:05 INFO  Logging:39 - Account attatched to user was found
+2021-10-12 23:34:30 INFO  Logging:39 - Account attatched to user was found
+2021-10-12 23:34:35 INFO  Logging:159 - account status updated
+2021-10-12 23:34:54 INFO  Logging:39 - Account attatched to user was found
+2021-10-12 23:35:12 INFO  Logging:51 - User was logged in
+2021-10-12 23:59:21 INFO  Logging:27 - New user was registered
+2021-10-12 23:59:21 INFO  Logging:50 - New Account was created
+2021-10-12 23:59:47 INFO  Logging:51 - User was logged in
+2021-10-12 23:59:47 INFO  Logging:39 - Account attatched to user was found
+2021-10-13 00:00:12 INFO  Logging:51 - User was logged in
+2021-10-13 00:00:41 INFO  Logging:39 - Account attatched to user was found
+2021-10-13 00:00:47 INFO  Logging:159 - account status updated
+2021-10-13 00:01:01 INFO  Logging:39 - Account attatched to user was found
+2021-10-13 00:01:32 INFO  Logging:51 - User was logged in
+2021-10-13 00:01:33 INFO  Logging:39 - Account attatched to user was found
+2021-10-13 00:01:33 INFO  Logging:39 - Account attatched to user was found
+2021-10-13 00:01:51 INFO  Logging:39 - Account attatched to user was found
+2021-10-13 00:01:51 INFO  Logging:39 - Account attatched to user was found
+2021-10-13 00:02:07 INFO  Logging:159 - account status updated
+2021-10-13 00:02:08 INFO  Logging:31 - User successfully deposited
+2021-10-13 00:02:08 INFO  Logging:39 - Account attatched to user was found
+2021-10-13 00:02:08 INFO  Logging:39 - Account attatched to user was found
+2021-10-13 00:07:58 INFO  Logging:51 - User was logged in
+2021-10-13 00:07:58 INFO  Logging:39 - Account attatched to user was found
+2021-10-13 00:07:59 INFO  Logging:39 - Account attatched to user was found
+2021-10-13 00:08:05 INFO  Logging:159 - account status updated
+2021-10-13 00:08:05 INFO  Logging:31 - User successfully deposited
+2021-10-13 00:08:06 INFO  Logging:39 - Account attatched to user was found
+2021-10-13 00:08:06 INFO  Logging:39 - Account attatched to user was found
+2021-10-13 00:08:13 INFO  Logging:159 - account status updated
+2021-10-13 00:08:13 INFO  Logging:37 - User withdrew from account successfully
+2021-10-13 00:08:14 INFO  Logging:39 - Account attatched to user was found
+2021-10-13 00:08:14 INFO  Logging:39 - Account attatched to user was found
+2021-10-13 00:12:43 INFO  Logging:27 - New user was registered
+2021-10-13 00:12:44 INFO  Logging:50 - New Account was created
+2021-10-13 00:12:59 INFO  Logging:51 - User was logged in
+2021-10-13 00:12:59 INFO  Logging:39 - Account attatched to user was found
+2021-10-13 00:13:22 WARN  Logging:47 - User tried to login with invalid credentials
+2021-10-13 00:13:31 INFO  Logging:51 - User was logged in
+2021-10-13 00:13:52 INFO  Logging:39 - Account attatched to user was found
+2021-10-13 00:13:55 INFO  Logging:159 - account status updated
+2021-10-13 00:14:10 INFO  Logging:51 - User was logged in
+2021-10-13 00:14:10 INFO  Logging:39 - Account attatched to user was found
+2021-10-13 00:14:10 INFO  Logging:39 - Account attatched to user was found
+2021-10-13 00:14:20 INFO  Logging:159 - account status updated
+2021-10-13 00:14:20 INFO  Logging:31 - User successfully deposited
+2021-10-13 00:14:21 INFO  Logging:39 - Account attatched to user was found
+2021-10-13 00:14:21 INFO  Logging:39 - Account attatched to user was found
+2021-10-13 00:14:30 INFO  Logging:39 - Account attatched to user was found
+2021-10-13 00:14:30 INFO  Logging:39 - Account attatched to user was found
+2021-10-13 00:14:55 INFO  Logging:51 - User was logged in
+2021-10-13 00:15:25 INFO  Logging:39 - Account attatched to user was found
+2021-10-13 00:15:29 INFO  Logging:159 - account status updated
+2021-10-13 00:15:29 INFO  Logging:37 - User withdrew from account successfully
+2021-10-13 00:15:38 INFO  Logging:39 - Account attatched to user was found
+2021-10-13 00:15:39 INFO  Logging:159 - account status updated
+2021-10-13 00:15:39 INFO  Logging:31 - User successfully deposited
+2021-10-13 00:15:46 INFO  Logging:39 - Account attatched to user was found
+2021-10-13 00:18:48 INFO  Logging:51 - User was logged in
+2021-10-13 00:18:48 INFO  Logging:39 - Account attatched to user was found
+2021-10-13 00:18:49 INFO  Logging:39 - Account attatched to user was found
+2021-10-13 00:18:57 INFO  Logging:159 - account status updated
+2021-10-13 00:18:58 INFO  Logging:31 - User successfully deposited
+2021-10-13 00:18:58 INFO  Logging:39 - Account attatched to user was found
+2021-10-13 00:18:59 INFO  Logging:39 - Account attatched to user was found
+2021-10-13 00:24:43 INFO  Logging:27 - New user was registered
+2021-10-13 00:24:44 INFO  Logging:50 - New Account was created
+2021-10-13 00:24:55 INFO  Logging:51 - User was logged in
+2021-10-13 00:24:56 INFO  Logging:39 - Account attatched to user was found
+2021-10-13 00:25:12 INFO  Logging:51 - User was logged in
+2021-10-13 00:25:36 INFO  Logging:39 - Account attatched to user was found
+2021-10-13 00:25:39 INFO  Logging:159 - account status updated
+2021-10-13 00:25:58 WARN  Logging:47 - User tried to login with invalid credentials
+2021-10-13 00:26:11 INFO  Logging:51 - User was logged in
+2021-10-13 00:26:11 INFO  Logging:39 - Account attatched to user was found
+2021-10-13 00:26:11 INFO  Logging:39 - Account attatched to user was found
+2021-10-13 00:26:31 INFO  Logging:159 - account status updated
+2021-10-13 00:26:31 INFO  Logging:31 - User successfully deposited
+2021-10-13 00:26:31 INFO  Logging:39 - Account attatched to user was found
+2021-10-13 00:26:32 INFO  Logging:39 - Account attatched to user was found
+2021-10-13 00:26:48 INFO  Logging:51 - User was logged in
+2021-10-13 00:26:48 INFO  Logging:39 - Account attatched to user was found
+2021-10-13 00:26:49 INFO  Logging:39 - Account attatched to user was found
+2021-10-13 00:26:56 INFO  Logging:39 - Account attatched to user was found
+2021-10-13 00:26:56 INFO  Logging:39 - Account attatched to user was found
+2021-10-13 00:27:07 WARN  Logging:93 - User tried to withdraw more money than they available in account
+2021-10-13 00:27:07 INFO  Logging:39 - Account attatched to user was found
+2021-10-13 00:27:08 INFO  Logging:39 - Account attatched to user was found
+2021-10-13 00:27:29 INFO  Logging:51 - User was logged in
+2021-10-13 00:28:15 INFO  Logging:39 - Account attatched to user was found
+2021-10-13 00:28:15 INFO  Logging:64 - Account deleted
+2021-10-13 00:30:24 INFO  Logging:51 - User was logged in
+2021-10-13 00:30:29 INFO  Logging:39 - Account attatched to user was found
+2021-10-13 00:30:30 INFO  Logging:64 - Account deleted
+2021-10-13 00:35:01 INFO  Logging:51 - User was logged in
+2021-10-13 00:35:08 INFO  Logging:39 - Account attatched to user was found
+2021-10-13 00:35:08 INFO  Logging:64 - Account deleted
+2021-10-13 00:35:52 WARN  Logging:43 - User tried logging in that does not exist
+2021-10-13 00:36:05 WARN  Logging:47 - User tried to login with invalid credentials
+2021-10-13 00:36:11 WARN  Logging:47 - User tried to login with invalid credentials
+2021-10-13 00:36:23 INFO  Logging:51 - User was logged in
+2021-10-13 00:36:24 WARN  Logging:35 - User tried opening account that doesnt exist

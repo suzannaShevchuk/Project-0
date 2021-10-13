@@ -125,9 +125,10 @@ public class BankDriver {
 				}
 				else if(temp.getStatus().equals("approved")){
 				System.out.println(aServ.findAccount(u.getUsername()));
+				System.out.println(u);
 				
 				System.out.println("Enter a number for what you want to do.");
-				System.out.println("1.View all your transactions");
+				System.out.println("1. View all your transactions");
 				System.out.println("2. Deposit");
 				System.out.println("3. Withdraw");
 				System.out.println("4. Transfer funds");
@@ -139,13 +140,13 @@ public class BankDriver {
 				
 				switch(choiceCustomer) {
 				case 1:
-					tServ.getAllTransactionsUser(u.getId());
+					System.out.println(tServ.getAllTransactionsUser(temp.getAccountId()));
 					break;
 					
 				case 2:
 					
 					System.out.println("Enter the amount you will deposit");
-					int choice3 = Integer.parseInt(in.nextLine());
+					double choice3 = Double.parseDouble(in.nextLine());
 					if(choice3<0) { System.out.println("Cannot deposit negative amount"); }
 					else {
 					try {
@@ -161,7 +162,7 @@ public class BankDriver {
 				case 3:
 					
 					System.out.println("Enter the amount you will withdraw");
-					int choice4 = Integer.parseInt(in.nextLine());
+					double choice4 = Double.parseDouble(in.nextLine());
 					if(choice4<0) { System.out.println("Cannot withdraw negative amount"); }
 					else {
 					try {
@@ -178,7 +179,7 @@ public class BankDriver {
 				case 4:
 					
 					System.out.println("Enter the amount you will transfer");
-					int choice5 = Integer.parseInt(in.nextLine());
+					double choice5 = Double.parseDouble(in.nextLine());
 					if(choice5<0) { System.out.println("Cannot transfer negative amount"); }
 					else {
 					try {
@@ -304,7 +305,7 @@ public class BankDriver {
 					String theUser4 = in.nextLine();
 					Account deposit = aServ.findAccount(theUser4);
 					System.out.println("Enter the amount you will deposit");
-					int choice3 = Integer.parseInt(in.nextLine());
+					double choice3 = Double.parseDouble(in.nextLine());
 					if(choice3<0) { System.out.println("Cannot deposit negative amount"); }
 					else {
 					try {
@@ -322,7 +323,7 @@ public class BankDriver {
 					String theUser5 = in.nextLine();
 					Account withdraw = aServ.findAccount(theUser5);
 					System.out.println("Enter the amount you will withdraw");
-					int choice4 = Integer.parseInt(in.nextLine());
+					double choice4 = Double.parseDouble(in.nextLine());
 					if(choice4<0) { System.out.println("Cannot withdraw negative amount"); }
 					else {
 					try {
@@ -339,7 +340,7 @@ public class BankDriver {
 					String theUser6 = in.nextLine();
 					Account withdraw2 = aServ.findAccount(theUser6);
 					System.out.println("Enter the amount you will transfer");
-					int choice5 = Integer.parseInt(in.nextLine());
+					double choice5 = Double.parseDouble(in.nextLine());
 					if(choice5<0) { System.out.println("Cannot transfer negative amount"); }
 					else {
 					try {
