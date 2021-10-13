@@ -258,6 +258,7 @@ public class BankDriver {
 			
 			if(u.getUserType().equals("Admin"))
 			{
+				System.out.println("Welcome Admin");
 				
 				System.out.println("Enter a number for what you want to do.");
 				System.out.println("1. View all accounts");
