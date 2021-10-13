@@ -21,3 +21,243 @@
 2021-10-11 16:33:46 INFO  Logging:27 - New user was registered
 2021-10-11 22:14:41 INFO  Logging:27 - New user was registered
 2021-10-11 22:14:53 INFO  Logging:51 - User was logged in
+2021-10-11 22:43:37 WARN  Logging:43 - User tried logging in that does not exist
+2021-10-11 22:44:11 INFO  Logging:51 - User was logged in
+2021-10-11 22:44:43 INFO  Logging:51 - User was logged in
+2021-10-11 22:45:20 INFO  Logging:51 - User was logged in
+2021-10-11 22:46:05 INFO  Logging:51 - User was logged in
+2021-10-11 22:47:16 INFO  Logging:27 - New user was registered
+2021-10-11 22:47:23 INFO  Logging:51 - User was logged in
+2021-10-11 22:49:08 INFO  Logging:51 - User was logged in
+2021-10-11 22:50:01 INFO  Logging:51 - User was logged in
+2021-10-11 22:52:43 INFO  Logging:51 - User was logged in
+2021-10-11 22:53:15 INFO  Logging:51 - User was logged in
+2021-10-11 22:54:06 WARN  Logging:47 - User tried to login with invalid credentials
+2021-10-11 22:54:18 INFO  Logging:51 - User was logged in
+2021-10-11 22:54:19 WARN  Logging:25 - User tried opening account that doesnt exist
+2021-10-11 22:56:17 INFO  Logging:51 - User was logged in
+2021-10-11 22:56:17 WARN  Logging:25 - User tried opening account that doesnt exist
+2021-10-11 22:56:17 INFO  Logging:41 - New Account was created
+2021-10-11 22:56:18 WARN  Logging:25 - User tried opening account that doesnt exist
+2021-10-11 22:56:18 WARN  Logging:25 - User tried opening account that doesnt exist
+2021-10-11 22:56:18 INFO  Logging:41 - New Account was created
+2021-10-11 22:56:19 WARN  Logging:25 - User tried opening account that doesnt exist
+2021-10-11 22:56:19 WARN  Logging:25 - User tried opening account that doesnt exist
+2021-10-11 22:56:19 INFO  Logging:41 - New Account was created
+2021-10-11 22:56:21 WARN  Logging:25 - User tried opening account that doesnt exist
+2021-10-11 22:56:21 WARN  Logging:25 - User tried opening account that doesnt exist
+2021-10-11 22:56:22 INFO  Logging:41 - New Account was created
+2021-10-11 22:56:22 WARN  Logging:25 - User tried opening account that doesnt exist
+2021-10-11 22:56:23 WARN  Logging:25 - User tried opening account that doesnt exist
+2021-10-11 22:56:23 INFO  Logging:41 - New Account was created
+2021-10-11 22:56:24 WARN  Logging:25 - User tried opening account that doesnt exist
+2021-10-11 22:56:24 WARN  Logging:25 - User tried opening account that doesnt exist
+2021-10-11 22:56:24 INFO  Logging:41 - New Account was created
+2021-10-12 08:17:47 INFO  Logging:51 - User was logged in
+2021-10-12 08:17:48 WARN  Logging:25 - User tried opening account that doesnt exist
+2021-10-12 08:18:27 INFO  Logging:27 - New user was registered
+2021-10-12 08:24:43 INFO  Logging:51 - User was logged in
+2021-10-12 08:24:43 WARN  Logging:25 - User tried opening account that doesnt exist
+2021-10-12 08:25:17 INFO  Logging:27 - New user was registered
+2021-10-12 08:31:36 INFO  Logging:27 - New user was registered
+2021-10-12 08:31:36 INFO  Logging:40 - New Account was created
+2021-10-12 08:34:34 INFO  Logging:27 - New user was registered
+2021-10-12 08:34:34 INFO  Logging:40 - New Account was created
+2021-10-12 08:36:19 INFO  Logging:27 - New user was registered
+2021-10-12 08:36:19 INFO  Logging:40 - New Account was created
+2021-10-12 08:37:29 INFO  Logging:27 - New user was registered
+2021-10-12 08:37:30 INFO  Logging:40 - New Account was created
+2021-10-12 08:44:35 INFO  Logging:27 - New user was registered
+2021-10-12 08:44:35 INFO  Logging:40 - New Account was created
+2021-10-12 09:07:35 INFO  Logging:27 - New user was registered
+2021-10-12 09:07:35 INFO  Logging:40 - New Account was created
+2021-10-12 09:07:53 INFO  Logging:51 - User was logged in
+2021-10-12 09:07:54 INFO  Logging:29 - Account attatched to user was found
+2021-10-12 09:07:54 INFO  Logging:29 - Account attatched to user was found
+2021-10-12 09:07:54 INFO  Logging:29 - Account attatched to user was found
+2021-10-12 09:07:55 INFO  Logging:29 - Account attatched to user was found
+2021-10-12 09:07:55 INFO  Logging:29 - Account attatched to user was found
+2021-10-12 09:07:55 INFO  Logging:29 - Account attatched to user was found
+2021-10-12 09:07:56 INFO  Logging:29 - Account attatched to user was found
+2021-10-12 09:07:56 INFO  Logging:29 - Account attatched to user was found
+2021-10-12 09:07:56 INFO  Logging:29 - Account attatched to user was found
+2021-10-12 09:07:57 INFO  Logging:29 - Account attatched to user was found
+2021-10-12 09:07:57 INFO  Logging:29 - Account attatched to user was found
+2021-10-12 09:07:58 INFO  Logging:29 - Account attatched to user was found
+2021-10-12 09:07:58 INFO  Logging:29 - Account attatched to user was found
+2021-10-12 09:07:58 INFO  Logging:29 - Account attatched to user was found
+2021-10-12 09:07:59 INFO  Logging:29 - Account attatched to user was found
+2021-10-12 09:07:59 INFO  Logging:29 - Account attatched to user was found
+2021-10-12 09:08:00 INFO  Logging:29 - Account attatched to user was found
+2021-10-12 09:08:00 INFO  Logging:29 - Account attatched to user was found
+2021-10-12 09:08:00 INFO  Logging:29 - Account attatched to user was found
+2021-10-12 09:08:01 INFO  Logging:29 - Account attatched to user was found
+2021-10-12 09:08:01 INFO  Logging:29 - Account attatched to user was found
+2021-10-12 09:11:46 INFO  Logging:51 - User was logged in
+2021-10-12 09:11:46 INFO  Logging:29 - Account attatched to user was found
+2021-10-12 09:11:47 INFO  Logging:29 - Account attatched to user was found
+2021-10-12 09:16:03 INFO  Logging:51 - User was logged in
+2021-10-12 09:16:03 INFO  Logging:29 - Account attatched to user was found
+2021-10-12 09:16:04 INFO  Logging:68 - Account updated
+2021-10-12 09:16:04 INFO  Logging:29 - Account attatched to user was found
+2021-10-12 09:17:06 INFO  Logging:51 - User was logged in
+2021-10-12 09:17:06 INFO  Logging:29 - Account attatched to user was found
+2021-10-12 09:17:06 INFO  Logging:68 - Account updated
+2021-10-12 09:17:07 INFO  Logging:29 - Account attatched to user was found
+2021-10-12 09:17:51 INFO  Logging:51 - User was logged in
+2021-10-12 09:17:52 INFO  Logging:29 - Account attatched to user was found
+2021-10-12 09:17:52 INFO  Logging:68 - Account updated
+2021-10-12 09:17:52 INFO  Logging:29 - Account attatched to user was found
+2021-10-12 09:18:51 INFO  Logging:51 - User was logged in
+2021-10-12 09:18:51 INFO  Logging:29 - Account attatched to user was found
+2021-10-12 09:18:52 INFO  Logging:68 - Account updated
+2021-10-12 09:18:52 INFO  Logging:29 - Account attatched to user was found
+2021-10-12 09:24:26 INFO  Logging:51 - User was logged in
+2021-10-12 09:24:27 INFO  Logging:29 - Account attatched to user was found
+2021-10-12 09:24:27 INFO  Logging:68 - Account updated
+2021-10-12 09:24:27 INFO  Logging:29 - Account attatched to user was found
+2021-10-12 09:25:18 INFO  Logging:51 - User was logged in
+2021-10-12 09:25:18 INFO  Logging:29 - Account attatched to user was found
+2021-10-12 09:25:18 INFO  Logging:68 - Account updated
+2021-10-12 09:25:19 INFO  Logging:29 - Account attatched to user was found
+2021-10-12 09:26:02 INFO  Logging:51 - User was logged in
+2021-10-12 09:26:03 INFO  Logging:29 - Account attatched to user was found
+2021-10-12 09:26:03 INFO  Logging:68 - Account updated
+2021-10-12 09:26:03 INFO  Logging:29 - Account attatched to user was found
+2021-10-12 09:27:58 INFO  Logging:51 - User was logged in
+2021-10-12 09:27:58 INFO  Logging:29 - Account attatched to user was found
+2021-10-12 09:27:59 INFO  Logging:68 - Account updated
+2021-10-12 09:27:59 INFO  Logging:29 - Account attatched to user was found
+2021-10-12 09:28:00 INFO  Logging:29 - Account attatched to user was found
+2021-10-12 09:28:00 INFO  Logging:29 - Account attatched to user was found
+2021-10-12 09:28:00 INFO  Logging:29 - Account attatched to user was found
+2021-10-12 09:28:01 INFO  Logging:29 - Account attatched to user was found
+2021-10-12 09:28:01 INFO  Logging:29 - Account attatched to user was found
+2021-10-12 09:28:01 INFO  Logging:29 - Account attatched to user was found
+2021-10-12 09:28:02 INFO  Logging:29 - Account attatched to user was found
+2021-10-12 09:28:02 INFO  Logging:29 - Account attatched to user was found
+2021-10-12 09:28:02 INFO  Logging:29 - Account attatched to user was found
+2021-10-12 09:28:03 INFO  Logging:29 - Account attatched to user was found
+2021-10-12 09:28:03 INFO  Logging:29 - Account attatched to user was found
+2021-10-12 09:28:03 INFO  Logging:29 - Account attatched to user was found
+2021-10-12 09:28:03 INFO  Logging:29 - Account attatched to user was found
+2021-10-12 09:28:04 INFO  Logging:29 - Account attatched to user was found
+2021-10-12 09:28:04 INFO  Logging:29 - Account attatched to user was found
+2021-10-12 09:33:15 INFO  Logging:51 - User was logged in
+2021-10-12 09:33:16 INFO  Logging:29 - Account attatched to user was found
+2021-10-12 09:33:16 INFO  Logging:68 - Account updated
+2021-10-12 09:33:16 INFO  Logging:29 - Account attatched to user was found
+2021-10-12 09:33:17 INFO  Logging:29 - Account attatched to user was found
+2021-10-12 09:33:17 INFO  Logging:29 - Account attatched to user was found
+2021-10-12 09:33:17 INFO  Logging:29 - Account attatched to user was found
+2021-10-12 09:33:18 INFO  Logging:29 - Account attatched to user was found
+2021-10-12 09:33:18 INFO  Logging:29 - Account attatched to user was found
+2021-10-12 09:33:18 INFO  Logging:29 - Account attatched to user was found
+2021-10-12 09:33:19 INFO  Logging:29 - Account attatched to user was found
+2021-10-12 09:33:19 INFO  Logging:29 - Account attatched to user was found
+2021-10-12 09:33:19 INFO  Logging:29 - Account attatched to user was found
+2021-10-12 09:33:20 INFO  Logging:29 - Account attatched to user was found
+2021-10-12 09:33:20 INFO  Logging:29 - Account attatched to user was found
+2021-10-12 09:33:20 INFO  Logging:29 - Account attatched to user was found
+2021-10-12 09:37:28 INFO  Logging:51 - User was logged in
+2021-10-12 09:37:28 INFO  Logging:29 - Account attatched to user was found
+2021-10-12 09:40:36 INFO  Logging:51 - User was logged in
+2021-10-12 09:40:36 INFO  Logging:29 - Account attatched to user was found
+2021-10-12 09:41:06 INFO  Logging:51 - User was logged in
+2021-10-12 09:41:07 INFO  Logging:29 - Account attatched to user was found
+2021-10-12 09:42:10 INFO  Logging:51 - User was logged in
+2021-10-12 09:42:10 INFO  Logging:29 - Account attatched to user was found
+2021-10-12 16:04:07 INFO  Logging:27 - New user was registered
+2021-10-12 16:04:07 INFO  Logging:50 - New Account was created
+2021-10-12 16:05:29 INFO  Logging:27 - New user was registered
+2021-10-12 16:05:30 INFO  Logging:50 - New Account was created
+2021-10-12 16:05:37 INFO  Logging:51 - User was logged in
+2021-10-12 16:05:38 INFO  Logging:39 - Account attatched to user was found
+2021-10-12 16:06:35 INFO  Logging:51 - User was logged in
+2021-10-12 16:41:48 INFO  Logging:51 - User was logged in
+2021-10-12 16:43:12 INFO  Logging:51 - User was logged in
+2021-10-12 16:44:27 INFO  Logging:39 - Account attatched to user was found
+2021-10-12 16:45:20 INFO  Logging:51 - User was logged in
+2021-10-12 16:45:45 INFO  Logging:39 - Account attatched to user was found
+2021-10-12 16:45:51 INFO  Logging:78 - Account updated
+2021-10-12 16:49:38 INFO  Logging:51 - User was logged in
+2021-10-12 16:49:51 INFO  Logging:39 - Account attatched to user was found
+2021-10-12 16:49:55 INFO  Logging:78 - Account updated
+2021-10-12 16:52:21 INFO  Logging:51 - User was logged in
+2021-10-12 16:52:29 INFO  Logging:39 - Account attatched to user was found
+2021-10-12 16:52:35 INFO  Logging:78 - Account updated
+2021-10-12 16:54:40 INFO  Logging:51 - User was logged in
+2021-10-12 16:54:55 INFO  Logging:39 - Account attatched to user was found
+2021-10-12 16:54:58 INFO  Logging:78 - Account updated
+2021-10-12 16:56:29 INFO  Logging:51 - User was logged in
+2021-10-12 16:56:33 INFO  Logging:39 - Account attatched to user was found
+2021-10-12 16:57:53 INFO  Logging:51 - User was logged in
+2021-10-12 16:58:00 INFO  Logging:39 - Account attatched to user was found
+2021-10-12 17:09:37 INFO  Logging:51 - User was logged in
+2021-10-12 17:09:44 INFO  Logging:39 - Account attatched to user was found
+2021-10-12 17:11:54 INFO  Logging:51 - User was logged in
+2021-10-12 17:12:01 INFO  Logging:39 - Account attatched to user was found
+2021-10-12 17:12:08 INFO  Logging:148 - account status updated
+2021-10-12 17:15:06 INFO  Logging:51 - User was logged in
+2021-10-12 17:15:09 INFO  Logging:39 - Account attatched to user was found
+2021-10-12 17:15:12 INFO  Logging:152 - account status updated
+2021-10-12 17:16:38 INFO  Logging:51 - User was logged in
+2021-10-12 17:16:46 INFO  Logging:39 - Account attatched to user was found
+2021-10-12 17:20:22 INFO  Logging:51 - User was logged in
+2021-10-12 17:20:26 INFO  Logging:39 - Account attatched to user was found
+2021-10-12 17:20:29 INFO  Logging:153 - account status updated
+2021-10-12 17:21:34 INFO  Logging:51 - User was logged in
+2021-10-12 17:23:16 INFO  Logging:51 - User was logged in
+2021-10-12 17:23:25 INFO  Logging:39 - Account attatched to user was found
+2021-10-12 17:25:53 INFO  Logging:51 - User was logged in
+2021-10-12 17:25:59 INFO  Logging:39 - Account attatched to user was found
+2021-10-12 17:26:02 INFO  Logging:155 - account status updated
+2021-10-12 17:26:50 INFO  Logging:51 - User was logged in
+2021-10-12 17:28:03 INFO  Logging:51 - User was logged in
+2021-10-12 17:30:14 INFO  Logging:51 - User was logged in
+2021-10-12 17:32:52 INFO  Logging:51 - User was logged in
+2021-10-12 17:33:10 INFO  Logging:39 - Account attatched to user was found
+2021-10-12 17:33:13 INFO  Logging:159 - account status updated
+2021-10-12 17:49:43 INFO  Logging:51 - User was logged in
+2021-10-12 17:49:55 INFO  Logging:39 - Account attatched to user was found
+2021-10-12 17:49:59 INFO  Logging:159 - account status updated
+2021-10-12 17:51:14 INFO  Logging:27 - New user was registered
+2021-10-12 17:51:14 INFO  Logging:50 - New Account was created
+2021-10-12 17:53:15 INFO  Logging:51 - User was logged in
+2021-10-12 17:53:44 INFO  Logging:39 - Account attatched to user was found
+2021-10-12 17:53:45 INFO  Logging:64 - Account deleted
+2021-10-12 17:55:10 WARN  Logging:30 - Username created that already exists in the database
+2021-10-12 17:56:20 INFO  Logging:27 - New user was registered
+2021-10-12 17:56:20 INFO  Logging:50 - New Account was created
+2021-10-12 17:56:34 INFO  Logging:51 - User was logged in
+2021-10-12 17:57:03 INFO  Logging:39 - Account attatched to user was found
+2021-10-12 17:57:06 INFO  Logging:159 - account status updated
+2021-10-12 17:57:56 INFO  Logging:51 - User was logged in
+2021-10-12 17:58:19 INFO  Logging:39 - Account attatched to user was found
+2021-10-12 18:00:04 WARN  Logging:47 - User tried to login with invalid credentials
+2021-10-12 18:00:17 INFO  Logging:51 - User was logged in
+2021-10-12 18:00:17 INFO  Logging:39 - Account attatched to user was found
+2021-10-12 18:00:18 INFO  Logging:39 - Account attatched to user was found
+2021-10-12 18:00:18 INFO  Logging:39 - Account attatched to user was found
+2021-10-12 18:00:18 INFO  Logging:39 - Account attatched to user was found
+2021-10-12 18:00:19 INFO  Logging:39 - Account attatched to user was found
+2021-10-12 18:00:19 INFO  Logging:39 - Account attatched to user was found
+2021-10-12 18:00:19 INFO  Logging:39 - Account attatched to user was found
+2021-10-12 18:00:20 INFO  Logging:39 - Account attatched to user was found
+2021-10-12 18:00:20 INFO  Logging:39 - Account attatched to user was found
+2021-10-12 18:00:20 INFO  Logging:39 - Account attatched to user was found
+2021-10-12 18:00:21 INFO  Logging:39 - Account attatched to user was found
+2021-10-12 18:00:21 INFO  Logging:39 - Account attatched to user was found
+2021-10-12 18:00:21 INFO  Logging:39 - Account attatched to user was found
+2021-10-12 18:00:22 INFO  Logging:39 - Account attatched to user was found
+2021-10-12 18:00:22 INFO  Logging:39 - Account attatched to user was found
+2021-10-12 18:00:22 INFO  Logging:39 - Account attatched to user was found
+2021-10-12 18:00:23 INFO  Logging:39 - Account attatched to user was found
+2021-10-12 18:00:23 INFO  Logging:39 - Account attatched to user was found
+2021-10-12 18:00:23 INFO  Logging:39 - Account attatched to user was found
+2021-10-12 18:00:23 INFO  Logging:39 - Account attatched to user was found
+2021-10-12 18:00:24 INFO  Logging:39 - Account attatched to user was found
+2021-10-12 18:00:24 INFO  Logging:39 - Account attatched to user was found
+2021-10-12 18:00:24 INFO  Logging:39 - Account attatched to user was found
+2021-10-12 18:00:25 INFO  Logging:39 - Account attatched to user was found
+2021-10-12 18:00:25 INFO  Logging:39 - Account attatched to user was found

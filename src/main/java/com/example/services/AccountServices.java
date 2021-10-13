@@ -1,6 +1,7 @@
 package com.example.services;
 
 import java.sql.SQLException;
+import java.util.List;
 
 import com.example.dao.AccountDao;
 import com.example.exceptions.AccountAlreadyExistsException;
@@ -15,7 +16,16 @@ public class AccountServices {
 	public AccountServices(AccountDao aDao) {
 		this.aDao = aDao;
 	}
+	
+	public List<Account> getAllAcounts()
+	{
+		return aDao.getAllAcounts();
+	}
 
+//	public List<Account> getAllOpenAcount() {
+//		return aDao.getAllOpenAcount();
+//	}
+	
 	public Account findAccount(String username)
 	{
 		Account a = null;
@@ -58,6 +68,42 @@ public class AccountServices {
 
 		}
 		
+		
+	}
+	
+	public void updateAccount(Account a)
+	{
+		try {
+			aDao.updateAccount(a);
+			Logging.logger.info("Account updated");
+			} catch(AccountDoesNotExistException e) {
+				e.printStackTrace();
+				Logging.logger.warn("Account updated that didn't exist");
+
+			}
+		
+	}
+	
+
+	public String checkStatus(Account a) {
+		if(a.getStatus().equals("open"))
+		{
+			return "open";
+		}
+		if(a.getStatus().equals("approved")) {
+		return "approved";
+		}
+		else
+		{
+			return "denied";
+		}
+	}
+	
+	public void updateStatus(Account a, String stat)
+	{
+		a.setStatus(stat);
+		
+		aDao.updateAccount(a);
 		
 	}
 	

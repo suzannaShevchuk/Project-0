@@ -17,4 +17,6 @@ public interface AccountDao {
 		
 	void deleteAccount(Account a);
 	
+	//List<Account> getAllOpenAcount();
+	
 }

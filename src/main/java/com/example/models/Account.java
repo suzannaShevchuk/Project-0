@@ -5,7 +5,9 @@ public class Account  {
 	private int accountId;
 	private double balance;
 	private String username;
+	private String status;
 	
+
 	public Account()
 	{
 		
@@ -16,6 +18,15 @@ public class Account  {
 		this.accountId = accountId;
 		this.balance = balance;
 		this.username = username;
+		this.status = "open";
+	}
+	
+	public Account(int accountId, double balance, String username, String status) {
+		super();
+		this.accountId = accountId;
+		this.balance = balance;
+		this.username = username;
+		this.status = "open";
 	}
 	
 	public Account(String username)
@@ -23,12 +34,14 @@ public class Account  {
 		super();
 		this.username = username;
 		this.balance = 0.0;
+		this.status = "open";
 	}
 	
 	public Account(double balance, String username) {
 		super();
 		this.balance = balance;
 		this.username = username;
+		this.status = "open";
 	}
 
 	public int getAccountId() {
@@ -54,12 +67,19 @@ public class Account  {
 	public void setUsername(String username) {
 		this.username = username;
 	}
-
+		
 	@Override
 	public String toString() {
-		return "Account [accountId=" + accountId + ", balance=" + balance + ", username=" + username + "]";
+		return "Account [accountId = " + accountId + ", balance = " + balance + ", username = " + username + ", status = "
+				+ status + "]";
 	}
-		
-	
+
+	public String getStatus() {
+		return status;
+	}
+
+	public void setStatus(String status) {
+		this.status = status;
+	}
 	
 }
