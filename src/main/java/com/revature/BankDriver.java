@@ -1,5 +1,6 @@
 package com.revature;
 
+import java.sql.SQLException;
 import java.util.Scanner;
 
 import com.example.dao.AccountDao;
@@ -8,6 +9,8 @@ import com.example.dao.TransactionDao;
 import com.example.dao.TransactionDaoDb;
 import com.example.dao.UserDao;
 import com.example.dao.UserDaoDB;
+import com.example.exceptions.NegativeAmountExcpetion;
+import com.example.exceptions.OverDrawException;
 import com.example.models.Account;
 import com.example.models.User;
 import com.example.services.AccountServices;
@@ -91,11 +94,13 @@ public class BankDriver {
 							done = true;
 						} catch(Exception e) {
 							System.out.println("Username or password was incorrect");
+							u = null;
 						}
 					} catch(Exception e) {
 						e.printStackTrace();
 						System.out.println("Sorry the username or email is already taken");
 						System.out.println("Please try signing up with a different one");
+						u = null;
 					}
 				}
 			}
@@ -110,7 +115,7 @@ public class BankDriver {
 			//System.out.println(u.getUserType());
 			if(u.getUserType().equals("Customer"))
 			{
-				
+								
 				Account temp = aServ.findAccount(u.getUsername());
 				
 				if(temp.getStatus().equals("open"))
@@ -121,8 +126,131 @@ public class BankDriver {
 				else if(temp.getStatus().equals("approved")){
 				System.out.println(aServ.findAccount(u.getUsername()));
 				
-				System.out.println("1 for Transaction History, 2 for Deposit, 3 for Withdrawl, 4 for Fund Transfer");
+				System.out.println("Enter a number for what you want to do.");
+				System.out.println("1.View all your transactions");
+				System.out.println("2. Deposit");
+				System.out.println("3. Withdraw");
+				System.out.println("4. Transfer funds");
+				System.out.println("5. Update account");
+				System.out.println("6. Logout and close");	
 				
+				int choiceCustomer = Integer.parseInt(in.nextLine());
+
+				
+				switch(choiceCustomer) {
+				case 1:
+					tServ.getAllTransactionsUser(u.getId());
+					break;
+					
+				case 2:
+					
+					System.out.println("Enter the amount you will deposit");
+					int choice3 = Integer.parseInt(in.nextLine());
+					if(choice3<0) { System.out.println("Cannot deposit negative amount"); }
+					else {
+					try {
+						tServ.deposit(temp, choice3);
+					} catch (SQLException e) {
+						System.out.println("Unable to deposit, make sure input is valid");
+						e.printStackTrace();
+					}
+					  }
+					
+					break;
+					
+				case 3:
+					
+					System.out.println("Enter the amount you will withdraw");
+					int choice4 = Integer.parseInt(in.nextLine());
+					if(choice4<0) { System.out.println("Cannot withdraw negative amount"); }
+					else {
+					try {
+						tServ.withdraw(temp, choice4);
+					} catch (OverDrawException o) {
+						System.out.println("Unable to withdraw more money than in account");
+					} catch (SQLException e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					}
+					}
+					break;
+					
+				case 4:
+					
+					System.out.println("Enter the amount you will transfer");
+					int choice5 = Integer.parseInt(in.nextLine());
+					if(choice5<0) { System.out.println("Cannot transfer negative amount"); }
+					else {
+					try {
+						tServ.withdraw(temp, choice5);
+					} catch (SQLException e) {
+						System.out.println("Unable to withdraw, make sure input is valid");
+						e.printStackTrace();
+					}
+					}
+					
+					System.out.println("Enter the username of the account you want to transfer the funds into");
+					String theUser7 = in.nextLine();
+					Account deposit2 = aServ.findAccount(theUser7);
+					try {
+						tServ.deposit(deposit2, choice5);
+					} catch (SQLException e) {
+						System.out.println("Unable to deposit, make sure input is valid");
+						e.printStackTrace();
+					}
+					
+					break;
+				case 5:
+					System.out.println("1. Edit first name");
+					System.out.println("2. Edit last name");
+					System.out.println("3. Edit first email");
+					System.out.println("4. Edit first password");
+					int choiceEdit = Integer.parseInt(in.nextLine());
+					switch(choiceEdit) {
+					case 1:
+						System.out.println("Enter updated first name");
+						String newName = in.nextLine();
+						u.setFirstName(newName);
+						uDao.updateUser(u);
+						break;
+					case 2:
+						System.out.println("Enter updated last name");
+						String newLastName = in.nextLine();
+						u.setLastName(newLastName);
+						uDao.updateUser(u);
+						break;
+					case 3:
+						System.out.println("Enter updated email");
+						String newEmail = in.nextLine();
+						u.setEmail(newEmail);
+						uDao.updateUser(u);
+						break;
+					case 4:
+						System.out.println("Enter updated password");
+						String newPass = in.nextLine();
+						u.setPassword(newPass);
+						uDao.updateUser(u);
+						break;
+					default:
+						System.out.println("Please enter valid choice 1-4");
+						break;
+					}
+					
+					break;					
+				case 6:
+					System.out.println("User logged out.");
+					System.exit(0);
+					break;
+				default:
+					System.out.println("Please enter a valid choice 1-6");
+					break;
+				}
+				
+				}
+				else if(temp.getStatus().equals("denied"))
+				{
+					System.out.println("Your account has been denied");
+					System.exit(0);
 				}
 			}
 			
@@ -139,7 +267,7 @@ public class BankDriver {
 				System.out.println("6. Deposit into an account");
 				System.out.println("7. Withdraw from an account");
 				System.out.println("8. Transfer from one account to another");
-				System.out.println("9. Delete account");
+				System.out.println("9. Delete/Cancel account");
 				System.out.println("10. Logout and close");
 				
 				int choice = Integer.parseInt(in.nextLine());
@@ -171,13 +299,65 @@ public class BankDriver {
 					aServ.updateStatus(statsChange, theChange);
 					System.out.println(statsChange.getStatus());
 					break;
-				case 6:
-					
+				case 6: //deposit
+					System.out.println("Enter the username of the account you want to deposit into");
+					String theUser4 = in.nextLine();
+					Account deposit = aServ.findAccount(theUser4);
+					System.out.println("Enter the amount you will deposit");
+					int choice3 = Integer.parseInt(in.nextLine());
+					if(choice3<0) { System.out.println("Cannot deposit negative amount"); }
+					else {
+					try {
+						tServ.deposit(deposit, choice3);
+					} catch (OverDrawException o) {
+						System.out.println("Unable to withdraw more money than in account");
+					} catch (SQLException e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					}
+					}
+					break; 
+				case 7:     //withdraw
+					System.out.println("Enter the username of the account you want to withdraw from");
+					String theUser5 = in.nextLine();
+					Account withdraw = aServ.findAccount(theUser5);
+					System.out.println("Enter the amount you will withdraw");
+					int choice4 = Integer.parseInt(in.nextLine());
+					if(choice4<0) { System.out.println("Cannot withdraw negative amount"); }
+					else {
+					try {
+						tServ.withdraw(withdraw, choice4);
+					} catch (SQLException e) {
+						System.out.println("Unable to wtihdraw, make sure input is valid");
+						e.printStackTrace();
+					} 
+					}
 					break;
-				case 7:
+				case 8: //transfer
 					
-					break;
-				case 8:
+					System.out.println("Enter the username of the account you want to transfer from");
+					String theUser6 = in.nextLine();
+					Account withdraw2 = aServ.findAccount(theUser6);
+					System.out.println("Enter the amount you will transfer");
+					int choice5 = Integer.parseInt(in.nextLine());
+					if(choice5<0) { System.out.println("Cannot transfer negative amount"); }
+					else {
+					try {
+						tServ.withdraw(withdraw2, choice5);
+					} catch (SQLException e) {
+						System.out.println("Unable to wtihdraw, make sure input is valid");
+						e.printStackTrace();
+					}
+					}
+					System.out.println("Enter the username of the account you want to transfer the funds into");
+					String theUser7 = in.nextLine();
+					Account deposit2 = aServ.findAccount(theUser7);
+					try {
+						tServ.deposit(deposit2, choice5);
+					} catch (SQLException e) {
+						System.out.println("Unable to deposit, make sure input is valid");
+						e.printStackTrace();
+					}
 					
 					break;
 				case 9:
@@ -185,14 +365,10 @@ public class BankDriver {
 					String theUser3 = in.nextLine();
 					Account deleteUser = aServ.findAccount(theUser3);
 					aServ.delete(deleteUser);
-					
-
-					
 					break;
 				case 10:
-					done2 = true;
-					done = false;
-					//System.exit(0);
+					System.out.println("User logged out.");
+					System.exit(0);
 					break;
 				default:
 					System.out.println("Please enter a valid choice 1-10");
@@ -205,9 +381,59 @@ public class BankDriver {
 			if(u.getUserType().equals("Employee"))
 			{
 				
+				System.out.println("Enter a number for what you want to do.");
+				System.out.println("1. View all accounts");
+				System.out.println("2. View all transactions");
+				System.out.println("3. View specific account");
+				System.out.println("4. View specific accounts transactions");
+				System.out.println("5. Update status of an account");
+				System.out.println("6. View all users");
+				System.out.println("7. Logout and close");	
+
+				
+				int choiceEmployee = Integer.parseInt(in.nextLine());
+				
+				switch(choiceEmployee)
+				{
+				case 1:
+					System.out.println(aServ.getAllAcounts());
+					break;
+				case 2:
+					System.out.println(tServ.getAllTransactions());
+					break;
+				case 3:
+					System.out.println("Enter the username of the account you want to find");
+					String theUser = in.nextLine();
+					System.out.println(aServ.findAccount(theUser));
+					break;
+				case 4:
+					System.out.println("Enter the id of the account you want to see transactions for");
+					int choice2 = Integer.parseInt(in.nextLine());
+					System.out.println(tServ.getAllTransactionsUser(choice2));
+					break;
+				case 5:
+					System.out.println("Enter the username of the account you want to update the status for");
+					String theUser2 = in.nextLine();
+					Account statsChange = aServ.findAccount(theUser2);
+					System.out.println("Type approved or denied.");
+					String theChange = in.nextLine();
+					aServ.updateStatus(statsChange, theChange);
+					System.out.println(statsChange.getStatus());
+					break;
+				case 6:
+					System.out.println(uDao.getAllUsers());
+					break;
+				case 7:
+					System.out.println("User logged out.");
+					System.exit(0);
+					break;
+				default:
+					System.out.println("Please enter a valid choice 1-10");
+					break;
+				
+			    }
+			
 			}
-			
-			
 		}
 		
 		

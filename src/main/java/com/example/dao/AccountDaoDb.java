@@ -153,8 +153,8 @@ public class AccountDaoDb implements AccountDao {
 			ps.setInt(4, a.getAccountId());
 			
 		    ps.execute();
-		    con.setAutoCommit(false);
-			con.commit();
+		    //con.setAutoCommit(true);
+			//con.commit();
 		    
 			Logging.logger.info("account status updated");
 			
@@ -163,7 +163,13 @@ public class AccountDaoDb implements AccountDao {
 		}
 	}
 
-
+	public void updateStatus(Account a, String stat)
+	{
+		a.setStatus(stat);
+		
+		updateAccount(a);
+	}
+	
 	@Override
 	public void deleteAccount(Account a) {
 

@@ -121,6 +121,8 @@ public class UserDaoDB implements UserDao {
 			ps.setString(6, u.getUserType());
 			ps.setInt(7, u.getId());
 			
+			ps.execute();
+			
 		} catch(SQLException e) {
 			e.printStackTrace();
 		}

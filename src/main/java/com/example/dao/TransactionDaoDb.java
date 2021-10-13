@@ -1,6 +1,7 @@
 package com.example.dao;
 
 import java.sql.Connection;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
@@ -96,6 +97,23 @@ public class TransactionDaoDb implements TransactionDao{
 			double newBal = actualBalance-cash;
 			a.setBalance(newBal);
 			adb.updateAccount(a);
+			
+			try {
+			
+			String sql = "INSERT INTO transactions(account_id, transact_type, transact_money) values"
+					+ "(?,?,?)";
+			Connection con = conUtil.getConnection();
+
+			PreparedStatement ps = con.prepareStatement(sql);
+				ps.setInt(1, a.getAccountId());
+				ps.setString(2, "withdraw");
+				ps.setDouble(3, cash);
+				
+				ps.execute();
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}			
 		}			
 	}
 	
@@ -116,6 +134,23 @@ public class TransactionDaoDb implements TransactionDao{
 			a.setBalance(newBal);
 			adb.updateAccount(a);
 		}
+		
+            try {
+			
+			String sql = "INSERT INTO transactions(account_id, transact_type, transact_money) values"
+					+ "(?,?,?)";
+			Connection con = conUtil.getConnection();
+
+			PreparedStatement ps = con.prepareStatement(sql);
+				ps.setInt(1, a.getAccountId());
+				ps.setString(2, "deposit");
+				ps.setDouble(3, dep);
+				
+				ps.execute();
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}	
 	}
 
 	@Override
@@ -130,6 +165,23 @@ public class TransactionDaoDb implements TransactionDao{
 		
 		adb.updateAccount(a);
 		adb.updateAccount(too);
+		
+           try {
+			
+			String sql = "INSERT INTO transactions(account_id, transact_type, transact_money) values"
+					+ "(?,?,?)";
+			Connection con = conUtil.getConnection();
+
+			PreparedStatement ps = con.prepareStatement(sql);
+				ps.setInt(1, a.getAccountId());
+				ps.setString(2, "transfer");
+				ps.setDouble(3, fund);
+				
+				ps.execute();
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}	
 	}
 
 }
